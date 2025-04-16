@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"conveyor\startup_stm32f446xx.o"
+"conveyor\main.o"
+"conveyor\stm32f4xx_it.o"
+"conveyor\stm32f4xx_hal_msp.o"
+"conveyor\tcs.o"
+"conveyor\stm32f4xx_hal_i2c.o"
+"conveyor\stm32f4xx_hal_i2c_ex.o"
+"conveyor\stm32f4xx_hal_rcc.o"
+"conveyor\stm32f4xx_hal_rcc_ex.o"
+"conveyor\stm32f4xx_hal_flash.o"
+"conveyor\stm32f4xx_hal_flash_ex.o"
+"conveyor\stm32f4xx_hal_flash_ramfunc.o"
+"conveyor\stm32f4xx_hal_gpio.o"
+"conveyor\stm32f4xx_hal_dma_ex.o"
+"conveyor\stm32f4xx_hal_dma.o"
+"conveyor\stm32f4xx_hal_pwr.o"
+"conveyor\stm32f4xx_hal_pwr_ex.o"
+"conveyor\stm32f4xx_hal_cortex.o"
+"conveyor\stm32f4xx_hal.o"
+"conveyor\stm32f4xx_hal_exti.o"
+"conveyor\stm32f4xx_hal_uart.o"
+"conveyor\system_stm32f4xx.o"
+--strict --scatter "CONVEYOR\CONVEYOR.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CONVEYOR.map" -o CONVEYOR\CONVEYOR.axf
